@@ -44,8 +44,9 @@ body{
 .top-bar .container-right{
     display: flex;
     flex-direction: row;
-    justify-content: center;;
+    justify-content: center;
     align-items: flex-end;
+    margin: 0 0 10px 0;
 }
 
 
@@ -55,14 +56,14 @@ span{
     margin: 10px;
     justify-content: space-between;
     font-style: normal;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
-    font-weight: bold;
 }
 
 h1{
     color: white;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 10px;
     margin-right: 10px;
     font-family: Lobster, cursive;
@@ -102,7 +103,7 @@ h2{
     padding: 10px 10px 10px 10px;
     margin: 20px 20px 25px 35px;
     font-size: 15px;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
 
@@ -131,6 +132,7 @@ h2{
     cursor: pointer;
     font-style: normal;
     letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
 
 }
 
