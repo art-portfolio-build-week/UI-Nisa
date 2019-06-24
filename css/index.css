@@ -151,7 +151,7 @@ h2{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 260px;
+    width: 235px;
     margin-bottom: 16px;
     padding: 24px;
 }
@@ -159,6 +159,7 @@ h2{
 .headline{
     font-size: 15px;
     text-align: left;
+    margin: 0 0 0 0;
 }
 
 .img2{
@@ -177,6 +178,9 @@ button{
     cursor: pointer;
     border: none;
     font-size: 15px;
+    /* border: 2px solid red; */
+    margin: 0 5px 5px 0;
+    text-align: left;
 }
 
 footer{
@@ -194,5 +198,11 @@ h4, p{
 }
 
 h4{
-    
+    width: 100%;
+    flex-direction: row;
+}
+
+p{
+    width: 100%;
+    flex-direction: row;
 }
