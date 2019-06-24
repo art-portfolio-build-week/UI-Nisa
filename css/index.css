@@ -4,14 +4,15 @@
     margin: 0 auto;
     padding: 0 auto;
 }
+
 html{
-    max-width: 62.5%;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
-
 body{
-    max-width: 100%;
-    margin: auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .top-bar{
@@ -21,7 +22,6 @@ body{
     /* width: 100%; */
     align-items: center;
     flex-direction: column;
-    border: 2px solid green;
     padding: 20px 0;
     background-color: rgb(4, 4, 20);
 }
@@ -40,6 +40,7 @@ body{
 }
 
 
+
 .top-bar .container-right{
     display: flex;
     flex-direction: row;
@@ -53,14 +54,15 @@ span{
     font-size: 20px;
     margin: 10px;
     justify-content: space-between;
-    font-style: oblique;
+    font-style: normal;
     cursor: pointer;
+    font-weight: bold;
 }
 
 h1{
     color: white;
-    font-style: oblique;
-    font-size: 25px;
+    font-style: normal;
+    font-size: 30px;
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -71,6 +73,7 @@ input{
     background-color: rgb(45, 45, 58);
     color: white;
     font-size: 15px;
+    padding: 7px 0 0 0;
 }
 
 img{
@@ -80,6 +83,7 @@ img{
 .bottom-bar{
     /* display: flex; */
     background-image:url('https://images.unsplash.com/photo-1490052961415-96ffc1244aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80');
+    overflow: hidden;
     flex-direction: column;
     /* background-color: rgb(42, 134, 165); */
     color: white;
@@ -87,7 +91,7 @@ img{
 
 h2{
     font-size: 30px;
-    font-style: oblique;
+    font-style: normal;
     padding: 45px 20px 20px 30px;
 }
 
@@ -124,7 +128,7 @@ h2{
     margin: 50px 0 30px 0;
     padding: 0 7px 0 7px;
     cursor: pointer;
-    font-style: oblique;
+    font-style: normal;
     letter-spacing: 1px;
 
 }
@@ -140,7 +144,6 @@ h2{
     width: 100%;
     margin-top: 16px;
     flex-wrap: wrap;
-    border: 2px solid green;
 }
 
 .card{
@@ -151,17 +154,45 @@ h2{
     width: 260px;
     margin-bottom: 16px;
     padding: 24px;
-    border: 2px solid blue;
 }
 
 .headline{
-    border: 2px solid red;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
+}
+
+.img2{
+    width: 100%;
 }
 
 .author{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+}
+
+button{
+    background-color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+footer{
+    background-color:rgb(4, 4, 20);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h4, p{
+    cursor: pointer;
+    font-style: normal;
+}
+
+h4{
+    
 }
