@@ -80,5 +80,31 @@ img{
 
 .bottom-bar{
     border: 2px solid red;
-    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    background-color: rgb(42, 134, 165);
+    color: white;
+}
+
+h2{
+    border:2px solid blue;
+    font-size: 30px;
+    font-style: oblique;
+    padding: 45px 20px 20px 30px;
+}
+
+.signbtn{
+    background-color: rgb(207, 207, 12);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 20px 25px 35px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabs{
+    border-bottom-color: gray;
+    justify-content: center;
+    align-items:center;
 }
