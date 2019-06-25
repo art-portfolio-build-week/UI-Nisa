@@ -24,7 +24,7 @@
           <h1><a href="index.html">Artista</a></h1>
         </div>
         <div class="container-center">
-          <input type="text" placeholder="......" />
+          <input type="search" placeholder="......" />
         </div>
         <div class="container-right">
           <span><a href="galleries.html" class="gallery">Galleries</a></span>
@@ -36,9 +36,39 @@
       </div>
     </div>
     <div class="bottom-bar">
-      <h2>Gallery</h2>
-      <button class="signbtn">Sign Me Up!</button>
+      <h2>Register</h2>
     </div>
+    <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container2">
+              <h1>Sign Up</h1>
+              <p class='formparagraph'>Join Artista and let the creativity flow!</p>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="..." name="email" required>
+
+              <label for="first-name"><b>First Name</b></label>
+              <input type="text" placeholder="...." name="first" required>
+
+              <label for="last-name"><b>Last Name</b></label>
+              <input type="text" placeholder="...." name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="...." name="psw" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="...." name="psw-repeat" required>
+          
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+          
+              <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
     <footer>
       <h4>Company</h4>
       <p>Privacy Policy</p>
