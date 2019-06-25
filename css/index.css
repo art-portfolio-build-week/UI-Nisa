@@ -141,7 +141,6 @@ a {
   }
 }
 input[type=search] {
-  border: 2px solid #262544;
   border-radius: 10px;
   background-color: #405768;
   color: white;
@@ -402,7 +401,7 @@ p {
 }
 .textcontainer {
   border: 2px solid #081f30;
-  border-radius: 20%;
+  border-radius: 5%;
   background-color: #59a3c0;
   background: linear-gradient(to right bottom, #59a3c0, #081f30);
   display: flex;
