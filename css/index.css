@@ -35,7 +35,6 @@ body{
     flex-direction: column;
     padding: 20px 0;
     background-color: rgb(4, 4, 20);
-    border: 2px solid red;
 }
 
 @media(max-width: 500px){
@@ -94,7 +93,7 @@ span{
     cursor: pointer;
 }
 
-h1.home{
+h1{
     color: white;
     font-size: 40px;
     margin-right: 45px;
