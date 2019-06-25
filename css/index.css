@@ -25,6 +25,8 @@ body{
 @media(max-width: 500px){
     body{
         width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
     }
 }
 
@@ -37,7 +39,7 @@ body{
     height: 100px;
     flex-direction: column;
     padding: 20px 0;
-    background-color: rgb(4, 4, 20);
+    background-color: #081f30;
 }
 
 @media(max-width: 500px){
@@ -139,7 +141,7 @@ h1, a{
 input{
     border: 2px solid rgb(38, 37, 68);
     border-radius: 10px;
-    background-color: rgb(45, 45, 58);
+    background-color: #405768;
     color: white;
     font-size: 18px;
     padding: 7px 0 0 0;
@@ -185,10 +187,11 @@ h2{
 }
 
 .signbtn{
-    background-color: rgb(209, 209, 65);
+    background-color: #e9db7b;
     border-radius: 2px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
     margin: 20px 20px 25px 35px;
+    letter-spacing: 1px;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     cursor: pointer;
@@ -237,7 +240,7 @@ h2{
 }
 
 .active-tab{
-    background-color: rgb(103, 170, 224);
+    background-color: #081f30;
     color: white;
     text-decoration: underline;
     text-decoration-color: yellow;
@@ -280,6 +283,8 @@ h2{
 @media(max-width: 500px){
     .img2{
         width: 100%;
+        padding: 0 auto;
+        margin: 20px 0;
     }
 }
 
@@ -301,7 +306,7 @@ button{
 }
 
 footer{
-    background-color:rgb(4, 4, 20);
+    background-color:#081f30;
     color: white;
     display: flex;
     flex-direction: column;
