@@ -140,7 +140,7 @@ a {
     margin: 0;
   }
 }
-input {
+input[type=search] {
   border: 2px solid #262544;
   border-radius: 10px;
   background-color: #405768;
@@ -455,12 +455,21 @@ button:hover {
 }
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #be5e57;
+  width: 50%;
 }
 .cancelbtn,
 .signupbtn {
   float: left;
-  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+.signupbtn {
+  background-color: #59a3c0;
+  padding: 14px 20px;
+  width: 50%;
 }
 .container2 {
   padding: 16px;
@@ -475,4 +484,8 @@ button:hover {
   .signupbtn {
     width: 100%;
   }
+}
+.formparagraph {
+  font-family: "Latos", sans-serif;
+  font-size: 20px;
 }
