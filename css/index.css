@@ -9,10 +9,21 @@ html{
     margin: 0 auto;
     padding: 0 auto;
 }
+@media(max-width: 500px){
+    html{
+        width: 100%;
+    }
+}
 
 body{
     max-width: 950px;
     margin: 0 auto;
+}
+
+@media(max-width: 500px){
+    body{
+        width: 100%;
+    }
 }
 
 .top-bar{
@@ -24,6 +35,13 @@ body{
     flex-direction: column;
     padding: 20px 0;
     background-color: rgb(4, 4, 20);
+    border: 2px solid red;
+}
+
+@media(max-width: 500px){
+    .top-bar{
+        width: 100%;
+    }  
 }
 
 .top-bar .container{
@@ -59,6 +77,12 @@ span{
     font-family: 'Lato', sans-serif;
     cursor: pointer;
 }
+@media(max-width: 500px){
+    span{
+        width: 100%;
+    }
+}
+
 
 .meetbtn{
     color: white;
@@ -70,7 +94,7 @@ span{
     cursor: pointer;
 }
 
-.home{
+h1.home{
     color: white;
     font-size: 40px;
     margin-right: 45px;
@@ -89,11 +113,16 @@ input{
 img{
     width: 50px;
 }
+@media(max-width: 500px){
+    img{
+        width: 25%;
+    }
+}
+
 
 .bottom-bar{
     /* display: flex; */
     background-image:url('https://images.unsplash.com/photo-1490052961415-96ffc1244aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80');
-    overflow: hidden;
     flex-direction: column;
     /* background-color: rgb(42, 134, 165); */
     color: white;
@@ -210,6 +239,7 @@ h4, p{
     cursor: pointer;
     font-style: normal;
     text-align: center;
+    font-size: 17px;
 }
 
 h4{
