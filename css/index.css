@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    max-width: 1000px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -62,10 +62,8 @@ span{
 
 h1{
     color: white;
-    font-style: normal;
     font-size: 40px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 45px;
     font-family: Lobster, cursive;
 }
 
@@ -137,8 +135,10 @@ h2{
 }
 
 .active-tab{
-    background-color: rgb(105, 105, 226);
+    background-color: rgb(103, 170, 224);
     color: white;
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 
 .cards-container{
@@ -157,6 +157,7 @@ h2{
     width: 235px;
     margin-bottom: 16px;
     padding: 24px;
+    font-family: 'Lato', sans-serif;
 }
 
 .headline{
@@ -191,21 +192,28 @@ footer{
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
 h4, p{
     cursor: pointer;
     font-style: normal;
+    text-align: center;
 }
 
 h4{
     width: 100%;
-    flex-direction: row;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-decoration-color: yellow;
+    text-decoration: underline;
+
 }
 
 p{
     width: 100%;
     flex-direction: row;
+    font-family: 'Lato', sans-serif;
+
 }
