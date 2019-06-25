@@ -1,36 +1,36 @@
 class Carousel{
     constructor(carousel){
         this.carousel = carousel;
-        this.images = this.carousel.querySelectorAll('.img');
+        this.imgs = this.carousel.querySelectorAll('.img');
         this.leftBtn = this.carousel.querySelector('.left-button');
         this.rightBtn = this.carousel.querySelector('.right-button');
         this.index = 0;
-        this.images[this.index].style.display = 'block';
+        this.imgs[this.index].style.display = 'block';
         this.leftBtn.addEventListener('click', () => this.toggleLeft());
         this.rightBtn.addEventListener('click', () => this.toggleRight());
     }
     toggleLeft(){
-        this.images[this.index].style.display ='none';
+        this.imgs[this.index].style.display ='none';
 
         if(this.index === 0){
-            this.index = this.images.length -1;
+            this.index = this.imgs.length -1;
         } else {
             this.index--;
         }
-        this.images[this.index].style.display = 'block';
+        this.imgs[this.index].style.display = 'block';
     }
     toggleRight(){
-        this.images[this.index].style.display ='none';
+        this.imgs[this.index].style.display ='none';
 
-        if(this.index === this.images.length -1){
+        if(this.index === this.imgs.length -1){
             this.index = 0;
         } else {
             this.index++;
         }
-        this.images[this.index].style.display = 'block';
-    };
+        this.imgs[this.index].style.display = 'block';
+    }
 
-};
+}
 
 let carousels = document.querySelectorAll('.carousel');
 carousels.forEach(carousel => new Carousel(carousel));
