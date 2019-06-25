@@ -66,8 +66,9 @@ body {
 .top-bar .container {
   display: flex;
   justify-content: none;
-  align-items: none;
+  align-items: center;;
   flex-direction: row;
+  justify-content: center;
   letter-spacing: 1px;
   padding: 0 10px;
 }
@@ -99,7 +100,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
 }
 
 .gallery {
@@ -120,7 +121,7 @@ body {
 span {
   color: white;
   font-size: 20px;
-  margin: 10px;
+  margin: 5px;
   justify-content: space-between;
   font-style: normal;
   font-family: "Lato", sans-serif;
@@ -135,13 +136,30 @@ span {
 .meetbtn {
   color: white;
   font-size: 20px;
-  margin: 10px;
+  margin: 5px;
   justify-content: space-between;
   font-style: normal;
   font-family: "Lato", sans-serif;
   cursor: pointer;
   text-decoration: none;
 }
+
+@media(max-width: 500px){
+    .meetbtn{
+        margin: 5px;
+    }
+}
+
+.signup {
+    color: white;
+  font-size: 20px;
+  margin: 5px;
+  justify-content: space-around;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  }
+
 
 h1,
 a {
@@ -401,8 +419,7 @@ p {
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   .left-button, .right-button {
@@ -437,8 +454,20 @@ p {
 
    a.img3{
         // display: none;
-        border: 2px solid red;
-  }
+        width: 100%;
+   }
+
+  img{
+      width: 100%;
+    //   object-fit: cover;
+   }
+
+}
+
+@media(max-width: 500px){
+    a.img{
+        width: 100%;
+    }
 }
 
 .meettheteam{
