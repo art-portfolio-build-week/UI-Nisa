@@ -60,7 +60,17 @@ span{
     cursor: pointer;
 }
 
-h1{
+.meetbtn{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    justify-content: space-between;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.home{
     color: white;
     font-size: 40px;
     margin-right: 45px;
