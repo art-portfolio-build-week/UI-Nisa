@@ -98,7 +98,6 @@ body {
   .top-bar .container-center .container-left .container-right {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
   }
@@ -117,6 +116,11 @@ body {
     }
 }
 
+@media(max-width: 500px){
+    .gallery, .img.icon, .signup, input[type=search], span{
+        letter-spacing: .5px;
+    }
+}
 
 
 .gallery {
@@ -128,11 +132,7 @@ body {
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
-@media (max-width: 500px) {
-  .gallery {
-    width: 100%;
-  }
-}
+
 
 span {
   color: white;
@@ -170,6 +170,13 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+    h1,
+    a {
+      margin: 0;
+    }
+  }
+
 @media (max-width: 500px) {
   h1,
   a {
@@ -186,14 +193,13 @@ input[type=search]{
 }
 
 @media (max-width: 500px) {
-  input {
+  input[type=search] {
     width: 100%;
     text-align: center;
   }
 }
 img.icon{
   width: 50px;
-  border: 2px solid red;
   cursor: pointer;
 }
 
@@ -282,7 +288,6 @@ h2 {
   align-items: center;
   font-weight: bold;
   border: 1px solid black;
-  background-color: #59a3c0;
   border-color: #e9db7b;
   margin: 50px 0 30px 0;
   padding: 0 7px 0 7px;
@@ -306,7 +311,7 @@ h2 {
 }
 
 .active-tab {
-  background-color: #081f30;
+  background-color: #59a3c0;
   color: white;
   text-decoration: underline;
   text-decoration-color: yellow;
@@ -369,13 +374,13 @@ h2 {
 }
 
 button {
-  background-color:#59a3c0;
   font-weight: bold;
   cursor: pointer;
+  background-color: #e9db7b;
   border: 2px solid #e9db7b;
   border-radius: 5px;
   font-size: 15px;
-  /* border: 2px solid red; */
+//   /* border: 2px solid red; */
   margin: 0 100px 0 0;
   padding: 0 10px 0 5px;
   text-align: left;
@@ -397,7 +402,7 @@ footer {
 }
 
 h4,
-p {
+p.foot {
   cursor: pointer;
   font-style: normal;
   text-align: center;
@@ -412,7 +417,7 @@ h4 {
   text-decoration: underline;
 }
 
-p {
+p.foot {
   width: 100%;
   flex-direction: row;
   font-family: "Lato", sans-serif;
@@ -486,20 +491,33 @@ p {
 .featuresartista{
     // border: 2px solid red;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
  .textcontainer{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     padding: 0 0 10px 0;
+ }
+ @media(max-width: 500px){
+    .textcontainer{
+        flex-direction: column;
+    }
+}
+
+
+ .text{
     border: 2px solid #081f30;
     border-radius: 5%;
     background-color: #59a3c0;
     background: linear-gradient(to right bottom, #59a3c0, #405768);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 10px 10px;
-    margin: 10px 10px 20px 0;
+    justify-content: space-between;
+    padding: 5px 0 10px 10px;
+    margin: 20px 10px 30px 0;
+    width: 100%;
 }
 
 h3, p{
@@ -507,7 +525,7 @@ h3, p{
     
 }
 h3{
-    margin: 0 50px 20px 0;
+    margin: 0 5px 10px 10px;
     font-size: 20px;
     text-decoration: underline;
     &:hover{
@@ -515,6 +533,9 @@ h3{
     }
 }
 
+p{
+    text-align: left;
+}
 
 //////sign up form
 
