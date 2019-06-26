@@ -9,6 +9,13 @@
   .marginsandpadding;
 }
 
+@media (max-width: 326px) {
+    * {
+      box-sizing: border-box;
+      .marginsandpadding;
+    }
+  }
+
 html {
   //   font-size: 62.5%;
   .marginsandpadding;
@@ -41,21 +48,21 @@ body {
 }
 
 @media (max-width: 800px) {
-    html {
+    body {
       .width;
       .marginsandpadding;
     }
   }
 
 @media (max-width: 500px) {
-  body {
-    .width;
-    .marginsandpadding;
-  }
+    body{
+        .width;
+        .marginsandpadding;
+    }
 }
 
 @media (max-width: 326px) {
-    html {
+    body {
       .width;
       .marginsandpadding;
     }
@@ -88,6 +95,13 @@ body {
   }
 }
 
+@media (max-width: 326px) {
+    .top-bar {
+      .width;
+      height: 180px;
+    }
+  }
+
 .top-bar .container {
   display: flex;
   justify-content: none;
@@ -112,6 +126,13 @@ body {
   }
 }
 
+@media (max-width: 326px) {
+    .top-bar .container {
+      .width;
+      flex-direction: column;
+    }
+  }
+
 .top-bar .container-center {
   margin: 0 auto;
   padding: 15px 10px 10px 10px;
@@ -125,6 +146,15 @@ body {
     .width;
   }
 }
+
+@media (max-width: 326px) {
+    .top-bar .container-center .container-left .container-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .width;
+    }
+  }
 
 .top-bar .container-right {
   display: flex;
@@ -148,6 +178,15 @@ body {
   .img.icon,
   .signup,
   input[type="search"],
+  span {
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 326px) {
+  .gallery,
+  .img.icon,
+  .signup,
   span {
     letter-spacing: 0.5px;
   }
@@ -178,6 +217,13 @@ span {
     text-align: center;
   }
 }
+
+@media (max-width: 326px) {
+    span {
+      .width;
+      text-align: center;
+    }
+  }
 
 .signup {
   color: white;
@@ -226,6 +272,13 @@ input[type="search"] {
     text-align: center;
   }
 }
+
+@media (max-width: 326px) {
+    input[type="search"] {
+      .width;
+      text-align: center;
+    }
+  }
 img.icon {
   width: 50px;
   cursor: pointer;
@@ -258,6 +311,14 @@ img.icon {
     overflow: hidden;
   }
 }
+
+@media (max-width: 326px) {
+    .bottom-bar {
+      .width;
+      overflow: hidden;
+    }
+  }
+
 
 h2 {
   font-size: 30px;
@@ -303,10 +364,15 @@ h2 {
 
 @media (max-width: 500px) {
   .tabs {
-    .width;
-    .font-normal;
+    .width;    
   }
 }
+
+@media (max-width: 326px) {
+    .tabs {
+      .width;
+    }
+  }
 
 .topics {
   display: flex;
@@ -341,9 +407,19 @@ h2 {
 @media (max-width: 500px) {
   .tab {
     .width;
-    .font-normal;
+    font-size: 15px;
+    letter-spacing: 0;
+    padding: 0 auto;
   }
 }
+
+@media (max-width: 326px) {
+    .tab {
+      .width;
+      font-size: 11px;
+      letter-spacing: 0;
+    }
+  }
 
 .active-tab {
   background-color: #59a3c0;
@@ -366,6 +442,14 @@ h2 {
   }
 }
 
+
+@media (max-width: 326px) {
+    .cards-container {
+      .width;
+    }
+  }
+  
+
 .card {
   border-bottom-color: gray;
   display: flex;
@@ -387,6 +471,16 @@ h2 {
   width: 110%;
   border-radius: 5px;
 }
+
+@media (max-width: 326px) {
+    .img2 {
+      .width;
+      padding: 0 auto;
+      margin: 20px 0;
+    }
+  } 
+
+
 @media (max-width: 500px) {
   .img2 {
     .width;
@@ -509,6 +603,14 @@ p.foot {
     }
 }
 
+@media(max-width: 326px){
+    a.img3 img{
+        border: 2px solid #081f30;
+        .width;
+        height: 250px;
+    }
+}
+
 
 
 h4.name {
@@ -544,6 +646,13 @@ p.role {
     }
 }
 
+@media(max-width: 326px){
+    .team{
+        .width;
+        padding: 0 10px 0 10px;
+    }
+}
+
 @media (max-width: 800px) {
   .teamimages {
     width: 90%;
@@ -557,6 +666,14 @@ p.role {
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 326px) {
+    .teamimages {
+      width: 90%;
+      flex-direction: column;
+    }
+  }
 // ///////team images css
 
 
@@ -572,6 +689,13 @@ p.role {
   .width;
   padding: 0 0 10px 0;
 }
+
+@media (max-width: 326px) {
+    .textcontainer {
+      flex-direction: column;
+    }
+  }
+
 @media (max-width: 500px) {
   .textcontainer {
     flex-direction: column;
@@ -604,6 +728,16 @@ p.role {
 }
 
 @media(max-width: 500px){
+    .text{
+        width: 100%;
+        object-fit: contain;
+        padding: 10px 10px 10px 10px;
+        margin: 20px 10px 10px 0;
+
+    }
+}
+
+@media(max-width: 326px){
     .text{
         width: 100%;
         object-fit: contain;
@@ -712,12 +846,19 @@ button:hover {
   display: table;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
   .cancelbtn,
   .signupbtn {
     .width;
   }
 }
+
+@media (max-width: 326px) {
+    .cancelbtn,
+    .signupbtn {
+      .width;
+    }
+  }
 
 label,
 b {

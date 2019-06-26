@@ -13,6 +13,13 @@
   margin: 0 auto;
   padding: 0 auto;
 }
+@media (max-width: 326px) {
+  * {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+}
 html {
   margin: 0 auto;
   padding: 0 auto;
@@ -44,7 +51,7 @@ body {
   font-size: 62.5%;
 }
 @media (max-width: 800px) {
-  html {
+  body {
     width: 100%;
     margin: 0 auto;
     padding: 0 auto;
@@ -58,7 +65,7 @@ body {
   }
 }
 @media (max-width: 326px) {
-  html {
+  body {
     width: 100%;
     margin: 0 auto;
     padding: 0 auto;
@@ -86,6 +93,12 @@ body {
     height: 180px;
   }
 }
+@media (max-width: 326px) {
+  .top-bar {
+    width: 100%;
+    height: 180px;
+  }
+}
 .top-bar .container {
   display: flex;
   justify-content: none;
@@ -107,11 +120,25 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 326px) {
+  .top-bar .container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .top-bar .container-center {
   margin: 0 auto;
   padding: 15px 10px 10px 10px;
 }
 @media (max-width: 500px) {
+  .top-bar .container-center .container-left .container-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 326px) {
   .top-bar .container-center .container-left .container-right {
     display: flex;
     flex-direction: row;
@@ -144,6 +171,14 @@ body {
     letter-spacing: 0.5px;
   }
 }
+@media (max-width: 326px) {
+  .gallery,
+  .img.icon,
+  .signup,
+  span {
+    letter-spacing: 0.5px;
+  }
+}
 .gallery {
   color: white;
   font-size: 20px;
@@ -163,6 +198,12 @@ span {
   cursor: pointer;
 }
 @media (max-width: 500px) {
+  span {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 326px) {
   span {
     width: 100%;
     text-align: center;
@@ -210,6 +251,12 @@ input[type="search"] {
     text-align: center;
   }
 }
+@media (max-width: 326px) {
+  input[type="search"] {
+    width: 100%;
+    text-align: center;
+  }
+}
 img.icon {
   width: 50px;
   cursor: pointer;
@@ -230,6 +277,12 @@ img.icon {
   color: white;
 }
 @media (max-width: 500px) {
+  .bottom-bar {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 326px) {
   .bottom-bar {
     width: 100%;
     overflow: hidden;
@@ -272,7 +325,11 @@ h2 {
 @media (max-width: 500px) {
   .tabs {
     width: 100%;
-    font-size: 18px;
+  }
+}
+@media (max-width: 326px) {
+  .tabs {
+    width: 100%;
   }
 }
 .topics {
@@ -305,7 +362,16 @@ h2 {
 @media (max-width: 500px) {
   .tab {
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
+    letter-spacing: 0;
+    padding: 0 auto;
+  }
+}
+@media (max-width: 326px) {
+  .tab {
+    width: 100%;
+    font-size: 11px;
+    letter-spacing: 0;
   }
 }
 .active-tab {
@@ -322,6 +388,11 @@ h2 {
   flex-wrap: wrap;
 }
 @media (max-width: 500px) {
+  .cards-container {
+    width: 100%;
+  }
+}
+@media (max-width: 326px) {
   .cards-container {
     width: 100%;
   }
@@ -344,6 +415,13 @@ h2 {
 .img2 {
   width: 110%;
   border-radius: 5px;
+}
+@media (max-width: 326px) {
+  .img2 {
+    width: 100%;
+    padding: 0 auto;
+    margin: 20px 0;
+  }
 }
 @media (max-width: 500px) {
   .img2 {
@@ -443,6 +521,13 @@ p.foot {
     height: 250px;
   }
 }
+@media (max-width: 326px) {
+  a.img3 img {
+    border: 2px solid #081f30;
+    width: 100%;
+    height: 250px;
+  }
+}
 h4.name {
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -471,6 +556,12 @@ p.role {
     padding: 0 10px 0 10px;
   }
 }
+@media (max-width: 326px) {
+  .team {
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+}
 @media (max-width: 800px) {
   .teamimages {
     width: 90%;
@@ -478,6 +569,12 @@ p.role {
   }
 }
 @media (max-width: 500px) {
+  .teamimages {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 326px) {
   .teamimages {
     width: 90%;
     flex-direction: column;
@@ -492,6 +589,11 @@ p.role {
   flex-direction: row;
   width: 100%;
   padding: 0 0 10px 0;
+}
+@media (max-width: 326px) {
+  .textcontainer {
+    flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   .textcontainer {
@@ -517,6 +619,14 @@ p.role {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .text {
+    width: 100%;
+    object-fit: contain;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 10px 10px 0;
+  }
+}
+@media (max-width: 326px) {
   .text {
     width: 100%;
     object-fit: contain;
@@ -606,7 +716,13 @@ button:hover {
   clear: both;
   display: table;
 }
-@media (max-width: 300px) {
+@media (max-width: 500px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+@media (max-width: 326px) {
   .cancelbtn,
   .signupbtn {
     width: 100%;
