@@ -185,13 +185,11 @@ img.icon {
 @media (max-width: 800px) {
   img.icon {
     width: 50px;
-    border: 2px solid purple;
   }
 }
 @media (max-width: 500px) {
   img.icon {
     width: 10%;
-    border: 2px solid green;
   }
 }
 .bottom-bar {
@@ -374,14 +372,11 @@ p.foot {
   font-family: "Lato", sans-serif;
 }
 .teamimages {
-  width: 90%;
-  height: 350px;
+  width: 100%;
+  height: 0 auto;
   margin-top: 10px;
-  position: relative;
-  overflow: hidden;
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  flex-direction: row;
 }
 .teamimages a.img3 img {
   width: 100%;
@@ -402,8 +397,39 @@ p.foot {
     width: 100%;
   }
 }
+h4.name {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #081f30;
+}
+p.role {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #081f30;
+}
 .meettheteam {
   text-align: center;
+  text-decoration: underline;
+  color: #081f30;
+}
+.team {
+  width: 100%;
+  padding: 0 auto;
+  justify-content: none;
+  align-items: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+  .teamimages {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .teamimages {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .featuresartista {
   display: flex;
