@@ -134,6 +134,7 @@ span {
 @media (max-width: 500px) {
   span {
     width: 100%;
+    text-align: center;
   }
 }
 .signup {
@@ -264,7 +265,7 @@ h2 {
 @media (max-width: 800px) {
   .tab {
     width: 100%;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 20px 0;
   }
 }
 @media (max-width: 500px) {
@@ -421,13 +422,13 @@ p.role {
 }
 @media (max-width: 800px) {
   .teamimages {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
   .teamimages {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
   }
 }
@@ -476,20 +477,23 @@ p {
 input[type=text],
 input[type=password] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 10px;
+  margin: 5px 0 15px 0;
   display: inline-block;
   border-radius: 5px;
   border: 2px solid #081f30;
-  background: #f1f1f1;
+  background: #7bc9e7;
+  color: black;
 }
 input[type=text]:focus,
 input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+  background-color: #f5e3e3;
+  font-family: "Latos", sans-serif;
+  font-size: 18px;
+  outline: nonne;
 }
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #081f30;
   margin-bottom: 25px;
 }
 button .cancelbtn .signupbtn {
@@ -500,14 +504,15 @@ button .cancelbtn .signupbtn {
   border: none;
   cursor: pointer;
   width: 50%;
-  opacity: 0.9;
+  opacity: 1;
 }
 button:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .cancelbtn {
   padding: 14px 20px;
   background-color: #be5e57;
+  border: 2px solid #081f30;
   width: 50%;
 }
 .cancelbtn,
@@ -520,6 +525,7 @@ button:hover {
 }
 .signupbtn {
   background-color: #59a3c0;
+  border: 2px solid #081f30;
   padding: 14px 20px;
   width: 50%;
 }
@@ -537,7 +543,16 @@ button:hover {
     width: 100%;
   }
 }
+b {
+  font-family: "Latos", sans-serif;
+  font-weight: 500;
+  color: #081f30;
+}
 .formparagraph {
   font-family: "Latos", sans-serif;
-  font-size: 20px;
+  text-align: center;
+  color: #081f30;
+  font-size: 25px;
+  font-weight: 600;
+  width: 100%;
 }
