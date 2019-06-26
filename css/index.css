@@ -309,6 +309,7 @@ h2 {
 }
 .img2 {
   width: 110%;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .img2 {
@@ -372,34 +373,32 @@ p.foot {
   flex-direction: row;
   font-family: "Lato", sans-serif;
 }
-.carousel {
+.teamimages {
   width: 90%;
   height: 350px;
   margin-top: 10px;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
 }
-.carousel a.img3 img {
-  margin-top: 25px;
-  border: 2px #081f30;
-}
-.carousel img {
+.teamimages a.img3 img {
   width: 100%;
   object-fit: cover;
-  height: 300px;
-  opacity: 0.5;
-}
-.carousel a.img3 img:hover {
+  height: 200px;
   opacity: 1;
-  -webkit-transform: rotateZ(-30deg);
-  -ms-transform: rotateZ(-30deg);
-  transform: rotateZ(-30deg);
+  border: 2px solid #081f30;
+  margin-top: 20px;
+}
+.teamimages a.img3 img:hover {
+  -webkit-transform: rotateZ(-20deg);
+  -ms-transform: rotateZ(-20deg);
+  transform: rotateZ(-20deg);
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
-  a.img {
+  a.img3 {
     width: 100%;
   }
 }
@@ -454,7 +453,8 @@ input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
+  border-radius: 5px;
+  border: 2px solid #081f30;
   background: #f1f1f1;
 }
 input[type=text]:focus,

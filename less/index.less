@@ -350,6 +350,7 @@ h2 {
 
 .img2 {
   width: 110%;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .img2 {
@@ -423,46 +424,45 @@ p.foot {
   font-family: "Lato", sans-serif;
 }
 
-///////carousel css
+///////team images css
 
-.carousel {
+.teamimages {
   width: 90%;
   height: 350px;
   margin-top: 10px;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
 
 
- a.img3 img{
-        // display: none;
-        // width: 100%;
-        margin-top: 25px;
-        border: 2px #081f30;
-   }
 
-  img{
-      width: 100%;
-      object-fit: cover;
-      height: 300px;
-      opacity: 0.5;
+ a.img3 img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    opacity: 1;
+    border: 2px solid #081f30;
+    margin-top: 20px;
    }
    a.img3 img:hover{
-       opacity: 1;
-       -webkit-transform: rotateZ(-30deg);
-       -ms-transform: rotateZ(-30deg);
-       transform: rotateZ(-30deg);
+    // opacity: 1;
+    -webkit-transform: rotateZ(-20deg);
+    -ms-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+    border-radius: 50%;
    }
 }
 
 
 @media(max-width: 500px){
-    a.img{
+    a.img3{
         width: 100%;
     }
 }
+
+
 
 .meettheteam{
     text-align: center;
@@ -525,7 +525,8 @@ input[type=text], input[type=password] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: none;
+    border-radius: 5px;
+    border: 2px solid #081f30;
     background: #f1f1f1;
   }
   
