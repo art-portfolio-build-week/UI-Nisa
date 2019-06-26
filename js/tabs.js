@@ -39,3 +39,23 @@ class TabLink {
 
   let mainh1 = document.querySelector('h1');
   console.log(mainh1);
+
+  mainh1.addEventListener('mouseover', event => {
+    event.target.style.color = 'yellow';
+
+    setTimeout(function(){
+      event.target.style.color = '';
+    }, 1000)
+  }, false);
+
+  let h2s =  document.querySelectorAll('h2');
+  console.log(h2s);
+
+  h2s.forEach((element) => element.addEventListener('mouseover', event =>{
+    event.target.style.color = ' yellow';
+
+    setTimeout(function(){
+      event.target.style.color = '';
+    }, 1000);
+  }), false);
+

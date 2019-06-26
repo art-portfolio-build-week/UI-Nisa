@@ -1,29 +1,27 @@
 @import "./carousel.less";
+@import './mixin.less';
+@import './variable.less';
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 auto;
+  .marginsandpadding;
 }
 
 html {
   //   font-size: 62.5%;
-  margin: 0 auto;
-  padding: 0 auto;
+  .marginsandpadding;
 }
 @media (max-width: 500px) {
   html {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
+    .width;
+    .marginsandpadding;
   }
 }
 
 @media (max-width: 500px) {
   html {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
+    .width;
+    .marginsandpadding;
   }
 }
 
@@ -35,9 +33,8 @@ body {
 
 @media (max-width: 500px) {
   body {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
+    .width;
+    .marginsandpadding;
   }
 }
 
@@ -45,7 +42,6 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
-  /* width: 100%; */
   align-items: center;
   height: 100px;
   flex-direction: column;
@@ -55,13 +51,13 @@ body {
 
 @media (max-width: 500px) {
   .top-bar {
-    width: 100%;
+    .width;
     height: 180px;
   }
 }
 @media (max-width: 800px) {
   .top-bar {
-    width: 100%;
+    .width;
     height: 180px;
   }
 }
@@ -78,14 +74,14 @@ body {
 
 @media (max-width: 800px) {
   .top-bar .container {
-    width: 100%;
+    .width;
     flex-direction: column;
   }
 }
 
 @media (max-width: 500px) {
   .top-bar .container {
-    width: 100%;
+    .width;
     flex-direction: column;
   }
 }
@@ -100,7 +96,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    .width;
   }
 }
 
@@ -152,7 +148,7 @@ span {
 }
 @media (max-width: 500px) {
   span {
-    width: 100%;
+    .width;
     text-align: center;
   }
 }
@@ -200,7 +196,7 @@ input[type="search"] {
 
 @media (max-width: 500px) {
   input[type="search"] {
-    width: 100%;
+    .width;
     text-align: center;
   }
 }
@@ -231,7 +227,7 @@ img.icon {
 
 @media (max-width: 500px) {
   .bottom-bar {
-    width: 100%;
+    .width;
     overflow: hidden;
   }
 }
@@ -240,6 +236,7 @@ h2 {
   font-size: 30px;
   font-family: "Lato", sans-serif;
   padding: 45px 20px 20px 30px;
+  text-decoration: underline;
 }
 
 .signbtn {
@@ -248,7 +245,7 @@ h2 {
   padding: 10px 20px 10px 20px;
   margin: 20px 20px 25px 35px;
   letter-spacing: 1px;
-  font-size: 15px;
+  .font-normal;
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
@@ -258,27 +255,26 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  font-size: 15px;
+  .width;
+  .font-normal;
 }
 
 @media (max-width: 800px) {
   .tabs {
-    width: 100%;
+    .width;
     margin: 0 10px 10px 0;
     border-bottom-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    font-size: 15px;
+    .font-normal;
   }
 }
 
 @media (max-width: 500px) {
   .tabs {
-    width: 100%;
-    font-size: 15px;
+    .width;
+    .font-normal;
   }
 }
 
@@ -299,23 +295,23 @@ h2 {
   padding: 0 7px 0 7px;
   cursor: pointer;
   font-style: normal;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
 }
 
 @media (max-width: 800px) {
   .tab {
-    width: 100%;
+    .width;
     margin: 50px 0 20px 0;
-    font-size: 15px;
+    .font-normal;
   }
 }
 
 @media (max-width: 500px) {
   .tab {
-    width: 100%;
-    font-size: 15px;
+    .width;
+    .font-normal;
   }
 }
 
@@ -329,14 +325,14 @@ h2 {
 .cards-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  .width;
   margin-top: 16px;
   flex-wrap: wrap;
 }
 
 @media (max-width: 500px) {
   .cards-container {
-    width: 100%;
+    .width;
   }
 }
 
@@ -352,7 +348,7 @@ h2 {
 }
 
 .headline {
-  font-size: 15px;
+    .font-normal;
   text-align: left;
   margin: 0 0 0 0;
 }
@@ -363,7 +359,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .img2 {
-    width: 100%;
+    .width;
     padding: 0 auto;
     margin: 20px 0;
   }
@@ -371,7 +367,7 @@ h2 {
 
 @media (max-width: 800px) {
   .img2 {
-    width: 100%;
+    .width;
     padding: 0 auto;
     margin: 20px 0;
   }
@@ -389,8 +385,7 @@ button {
   background-color: #e9db7b;
   border: 2px solid #e9db7b;
   border-radius: 5px;
-  font-size: 15px;
-  //   /* border: 2px solid red; */
+  .font-normal;
   margin: 0 100px 0 0;
   padding: 0 10px 0 5px;
   text-align: left;
@@ -402,12 +397,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  .width;
 }
 
 @media (max-width: 500px) {
   footer {
-    width: 100%;
+    .width;
   }
 }
 
@@ -420,7 +415,7 @@ p.foot {
 }
 
 h4 {
-  width: 100%;
+  .width;
   font-weight: bold;
   font-family: "Lato", sans-serif;
   text-decoration-color: yellow;
@@ -428,7 +423,7 @@ h4 {
 }
 
 p.foot {
-  width: 100%;
+  .width;
   flex-direction: row;
   font-family: "Lato", sans-serif;
 }
@@ -436,16 +431,15 @@ p.foot {
 ///////team images css
 
 .teamimages {
-  width: 100%;
+  .width;
   height: 0 auto;
   margin-top: 10px;
-  //   position: relative;
   display: flex;
   flex-direction: row;
 
   a.img3 img {
-    width: 100%;
-    height: 80%;
+    .width;
+    height: 70%;
     opacity: 1;
     border: 2px solid #081f30;
     margin: 5px 0 0 0;
@@ -460,18 +454,19 @@ p.foot {
   }
 }
 
-@media(max-width: 500px){
-    a.img3 img{
-        border: 2px solid #081f30;
-        width: 100%;
-        height: 250px;
-    }
-}
-
 @media(max-width: 800px){
     a.img3 img{
         border: 2px solid #081f30;
-        width: 100%;
+        .width;
+        height: 70%;
+    }
+}
+
+
+@media(max-width: 500px){
+    a.img3 img{
+        border: 2px solid #081f30;
+        .width;
         height: 250px;
     }
 }
@@ -488,7 +483,7 @@ p.role {
   text-align: center;
   font-family: "Lato", sans-serif;
   color: #081f30;
-  font-size: 15px;
+  .font-normal;
 }
 
 .meettheteam {
@@ -498,7 +493,7 @@ p.role {
 }
 
 .team {
-  width: 100%;
+    .width;
   justify-content: none;
   align-items: center;
   margin: 0 10px 0 10px;
@@ -506,7 +501,7 @@ p.role {
 
 @media(max-width: 500px){
     .team{
-        width: 100%;
+        .width;
     }
 }
 
@@ -534,7 +529,7 @@ p.role {
 .textcontainer {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  .width;
   padding: 0 0 10px 0;
 }
 @media (max-width: 500px) {
@@ -542,6 +537,13 @@ p.role {
     flex-direction: column;
   }
 }
+
+@media (max-width: 800px) {
+    .textcontainer {
+      flex-direction: column;
+      .width;
+    }
+  }
 
 .text {
   border: 2px solid #081f30;
@@ -556,9 +558,9 @@ p.role {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px 0 10px 10px;
-  margin: 20px 10px 30px 0;
-  width: 100%;
+  padding: 10px 10px 10px 5px;
+  margin: 20px 10px 10px 0;
+  .width;
 }
 
 h3,
@@ -576,22 +578,22 @@ h3 {
 }
 
 p {
-  text-align: center;
-  font-size: 15px;
+  text-align: left;
+  .font-normal;
 }
 
 //////sign up form
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+    .width;
   padding: 10px;
   margin: 5px 0 15px 0;
   display: inline-block;
   border-radius: 5px;
   border: 2px solid #081f30;
   background: white;
-  font-size: 15px;
+  .font-normal;
   color: black;
 }
 
@@ -660,7 +662,7 @@ button:hover {
 @media (max-width: 300px) {
   .cancelbtn,
   .signupbtn {
-    width: 100%;
+    .width;
   }
 }
 
@@ -677,5 +679,5 @@ b {
   text-align: center;
   color: #081f30;
   font-size: 25px;
-  width: 100%;
+  .width;
 }
