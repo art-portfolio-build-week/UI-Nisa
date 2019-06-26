@@ -100,7 +100,7 @@ body {
   .gallery,
   .img.icon,
   .signup,
-  input[type=search],
+  input[type="search"],
   span {
     letter-spacing: 4px;
   }
@@ -109,7 +109,7 @@ body {
   .gallery,
   .img.icon,
   .signup,
-  input[type=search],
+  input[type="search"],
   span {
     letter-spacing: 0.5px;
   }
@@ -167,7 +167,7 @@ a {
     margin: 0 auto;
   }
 }
-input[type=search] {
+input[type="search"] {
   border-radius: 10px;
   background-color: #405768;
   color: white;
@@ -175,7 +175,7 @@ input[type=search] {
   padding: 7px 0 0 0;
 }
 @media (max-width: 500px) {
-  input[type=search] {
+  input[type="search"] {
     width: 100%;
     text-align: center;
   }
@@ -388,11 +388,11 @@ p.foot {
 }
 .teamimages a.img3 img {
   width: 100%;
-  object-fit: cover;
-  height: 200px;
+  height: 80%;
   opacity: 1;
   border: 2px solid #081f30;
-  margin-top: 20px;
+  margin: 5px 0 0 0;
+  padding: 0 auto;
 }
 .teamimages a.img3 img:hover {
   -webkit-transform: rotateZ(-20deg);
@@ -401,8 +401,17 @@ p.foot {
   border-radius: 50%;
 }
 @media (max-width: 500px) {
-  a.img3 {
+  a.img3 img {
+    border: 2px solid #081f30;
     width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 800px) {
+  a.img3 img {
+    border: 2px solid #081f30;
+    width: 100%;
+    height: 250px;
   }
 }
 h4.name {
@@ -424,10 +433,14 @@ p.role {
 }
 .team {
   width: 100%;
-  padding: 0 auto;
   justify-content: none;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 0 10px 0 10px;
+}
+@media (max-width: 500px) {
+  .team {
+    width: 100%;
+  }
 }
 @media (max-width: 800px) {
   .teamimages {
@@ -485,8 +498,8 @@ p {
   text-align: center;
   font-size: 15px;
 }
-input[type=text],
-input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0 15px 0;
@@ -497,8 +510,8 @@ input[type=password] {
   font-size: 15px;
   color: black;
 }
-input[type=text]:focus,
-input[type=password]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
   background: linear-gradient(to right bottom, white, #59a3c0, #405768);
   font-family: "Latos", sans-serif;
   font-size: 18px;
@@ -510,7 +523,7 @@ hr {
   margin-bottom: 25px;
 }
 button .cancelbtn .signupbtn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

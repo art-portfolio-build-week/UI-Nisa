@@ -1,4 +1,4 @@
-@import './carousel.less';
+@import "./carousel.less";
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 html {
-//   font-size: 62.5%;
+  //   font-size: 62.5%;
   margin: 0 auto;
   padding: 0 auto;
 }
@@ -69,20 +69,19 @@ body {
 .top-bar .container {
   display: flex;
   justify-content: none;
-  align-items: center;;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
   letter-spacing: 1px;
   padding: 0 10px;
-
 }
 
 @media (max-width: 800px) {
-    .top-bar .container {
-      width: 100%;
-      flex-direction: column
-    }
+  .top-bar .container {
+    width: 100%;
+    flex-direction: column;
   }
+}
 
 @media (max-width: 500px) {
   .top-bar .container {
@@ -112,18 +111,25 @@ body {
   align-items: flex-end;
   margin: 0 0 5px 0;
 }
-@media(max-width: 800px){
-    .gallery, .img.icon, .signup, input[type=search], span{
-        letter-spacing: 4px;
-    }
+@media (max-width: 800px) {
+  .gallery,
+  .img.icon,
+  .signup,
+  input[type="search"],
+  span {
+    letter-spacing: 4px;
+  }
 }
 
-@media(max-width: 500px){
-    .gallery, .img.icon, .signup, input[type=search], span{
-        letter-spacing: .5px;
-    }
+@media (max-width: 500px) {
+  .gallery,
+  .img.icon,
+  .signup,
+  input[type="search"],
+  span {
+    letter-spacing: 0.5px;
+  }
 }
-
 
 .gallery {
   color: white;
@@ -134,7 +140,6 @@ body {
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
-
 
 span {
   color: white;
@@ -152,17 +157,15 @@ span {
   }
 }
 
-
 .signup {
-    color: white;
+  color: white;
   font-size: 20px;
   margin: 5px;
   justify-content: space-around;
   font-style: normal;
   font-family: "Lato", sans-serif;
   cursor: pointer;
-  }
-
+}
 
 h1,
 a {
@@ -174,11 +177,11 @@ a {
 }
 
 @media (max-width: 800px) {
-    h1,
-    a {
-      margin: 0 auto;
-    }
+  h1,
+  a {
+    margin: 0 auto;
   }
+}
 
 @media (max-width: 500px) {
   h1,
@@ -187,7 +190,7 @@ a {
   }
 }
 
-input[type=search]{
+input[type="search"] {
   border-radius: 10px;
   background-color: #405768;
   color: white;
@@ -196,22 +199,21 @@ input[type=search]{
 }
 
 @media (max-width: 500px) {
-  input[type=search] {
+  input[type="search"] {
     width: 100%;
     text-align: center;
   }
 }
-img.icon{
+img.icon {
   width: 50px;
   cursor: pointer;
 }
 
-
 @media (max-width: 800px) {
-    img.icon {
-      width: 50px;
-    }
+  img.icon {
+    width: 50px;
   }
+}
 
 @media (max-width: 500px) {
   img.icon {
@@ -388,7 +390,7 @@ button {
   border: 2px solid #e9db7b;
   border-radius: 5px;
   font-size: 15px;
-//   /* border: 2px solid red; */
+  //   /* border: 2px solid red; */
   margin: 0 100px 0 0;
   padding: 0 10px 0 5px;
   text-align: left;
@@ -437,224 +439,243 @@ p.foot {
   width: 100%;
   height: 0 auto;
   margin-top: 10px;
-//   position: relative;
+  //   position: relative;
   display: flex;
   flex-direction: row;
 
-  
-
-
- a.img3 img{
+  a.img3 img {
     width: 100%;
-    object-fit: cover;
-    height: 200px;
+    height: 80%;
     opacity: 1;
     border: 2px solid #081f30;
-    margin-top: 20px;
-   }
-   a.img3 img:hover{
+    margin: 5px 0 0 0;
+    padding: 0 auto;
+  }
+  a.img3 img:hover {
     // opacity: 1;
     -webkit-transform: rotateZ(-20deg);
     -ms-transform: rotateZ(-20deg);
     transform: rotateZ(-20deg);
     border-radius: 50%;
-   }
+  }
+}
+
+@media(max-width: 500px){
+    a.img3 img{
+        border: 2px solid #081f30;
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media(max-width: 800px){
+    a.img3 img{
+        border: 2px solid #081f30;
+        width: 100%;
+        height: 250px;
+    }
 }
 
 
+
+h4.name {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #081f30;
+  font-size: 17px;
+}
+p.role {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #081f30;
+  font-size: 15px;
+}
+
+.meettheteam {
+  text-align: center;
+  text-decoration: underline;
+  color: #081f30;
+}
+
+.team {
+  width: 100%;
+  justify-content: none;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+
 @media(max-width: 500px){
-    a.img3{
+    .team{
         width: 100%;
     }
 }
 
-h4.name{
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
-    color: #081f30;
-    font-size: 17px;
-}
-p.role{
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    color: #081f30;
-    font-size: 15px;
+@media (max-width: 800px) {
+  .teamimages {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 
-.meettheteam{
-    text-align: center;
-    text-decoration: underline;
-    color: #081f30
-}
-
-.team{
-    width: 100%;
-    padding: 0 auto;
-    justify-content: none;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-@media(max-width: 800px){
-    .teamimages{
-        width: 90%;
-        flex-direction: column;
-    }
-}
-
-@media(max-width: 500px){
-    .teamimages{
-        width: 90%;
-        flex-direction: column;
-    }
+@media (max-width: 500px) {
+  .teamimages {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 
 /////features
-.featuresartista{
-    // border: 2px solid red;
-    display: flex;
-    flex-direction: column;  
+.featuresartista {
+  // border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
- .textcontainer{
-     display: flex;
-     flex-direction: row;
-     width: 100%;
-     padding: 0 0 10px 0;
- }
- @media(max-width: 500px){
-    .textcontainer{
-        flex-direction: column;
-    }
+.textcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 0 10px 0;
 }
-
-
- .text{
-    border: 2px solid #081f30;
-    border-radius: 5%;
-    background-color: #59a3c0;
-    background: linear-gradient(to right bottom, rgb(194, 207, 211), #59a3c0, #405768);
-    display: flex;
+@media (max-width: 500px) {
+  .textcontainer {
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5px 0 10px 10px;
-    margin: 20px 10px 30px 0;
-    width: 100%;
+  }
 }
 
-h3, p{
-    font-family: "Latos", sans-serif;
-    
-}
-h3{
-    margin: 0 5px 5px 10px;
-    color: white;
-    font-size: 20px;
-    text-decoration: underline;
-    &:hover{
-        color: #081f30;
-    }
+.text {
+  border: 2px solid #081f30;
+  border-radius: 5%;
+  background-color: #59a3c0;
+  background: linear-gradient(
+    to right bottom,
+    rgb(194, 207, 211),
+    #59a3c0,
+    #405768
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0 10px 10px;
+  margin: 20px 10px 30px 0;
+  width: 100%;
 }
 
-p{
-    text-align: center;
-    font-size: 15px;
+h3,
+p {
+  font-family: "Latos", sans-serif;
+}
+h3 {
+  margin: 0 5px 5px 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: underline;
+  &:hover {
+    color: #081f30;
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
 }
 
 //////sign up form
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px 0;
-    display: inline-block;
-    border-radius: 5px;
-    border: 2px solid #081f30;
-    background: white;
-    font-size: 15px;
-    color: black;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background:linear-gradient(to right bottom, white, #59a3c0, #405768);
-    font-family: "Latos", sans-serif;
-    font-size: 18px;
-    color: linear-gradient(to right bottom, #405768, #59a3c0, white);
-    outline: none;
-    
-  }
-  
-  hr {
-    border: 1px solid #081f30;
-    margin-bottom: 25px;
-  }
-  
-  button .cancelbtn .signupbtn{
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    opacity: 1;
-  }
-  
-  button:hover {
-    opacity: .5;
-  }
-  
-  .cancelbtn {
-    padding: 14px 20px;
-    background-color: #be5e57;
-    border: 2px solid #081f30;
-    width: 50%;
-  }
-
-  
-  .cancelbtn, .signupbtn {
-    float: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 10px 0;
-  }
-
-  .signupbtn{
-      background-color: #59a3c0;
-      border: 2px solid #081f30;
-      padding: 14px 20px;
-      width: 50%;
-  }
-  
-  .container2 {
-    padding: 16px;
-  }
-  
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  @media(max-width: 300px) {
-    .cancelbtn, .signupbtn {
-      width: 100%;
-    }
-  }
-
-label, b{
-    font-family: "Latos", sans-serif;
-    font-weight: 500;
-    color: #081f30;
-    font-size: 17px;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #081f30;
+  background: white;
+  font-size: 15px;
+  color: black;
 }
 
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: linear-gradient(to right bottom, white, #59a3c0, #405768);
+  font-family: "Latos", sans-serif;
+  font-size: 18px;
+  color: linear-gradient(to right bottom, #405768, #59a3c0, white);
+  outline: none;
+}
 
- .formparagraph{
-    font-family: "Latos", sans-serif;
-    text-align: center;
-    color: #081f30;
-    font-size: 25px;
+hr {
+  border: 1px solid #081f30;
+  margin-bottom: 25px;
+}
+
+button .cancelbtn .signupbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #be5e57;
+  border: 2px solid #081f30;
+  width: 50%;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.signupbtn {
+  background-color: #59a3c0;
+  border: 2px solid #081f30;
+  padding: 14px 20px;
+  width: 50%;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
     width: 100%;
   }
+}
+
+label,
+b {
+  font-family: "Latos", sans-serif;
+  font-weight: 500;
+  color: #081f30;
+  font-size: 17px;
+}
+
+.formparagraph {
+  font-family: "Latos", sans-serif;
+  text-align: center;
+  color: #081f30;
+  font-size: 25px;
+  width: 100%;
+}
