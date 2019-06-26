@@ -2,6 +2,8 @@
 @import './mixin.less';
 @import './variable.less';
 
+
+// GENERAL PAGE
 * {
   box-sizing: border-box;
   .marginsandpadding;
@@ -37,7 +39,10 @@ body {
     .marginsandpadding;
   }
 }
+// GENERAL PAGE
 
+
+// TOP BAR/NAV
 .top-bar {
   display: flex;
   justify-content: center;
@@ -216,12 +221,13 @@ img.icon {
     width: 10%;
   }
 }
+// TOP BAR/NAV
 
+
+// BOTTOM BAR
 .bottom-bar {
-  /* display: flex; */
   background-image: url("https://images.unsplash.com/photo-1490052961415-96ffc1244aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80");
   flex-direction: column;
-  /* background-color: rgb(42, 134, 165); */
   color: white;
 }
 
@@ -236,7 +242,7 @@ h2 {
   font-size: 30px;
   font-family: "Lato", sans-serif;
   padding: 45px 20px 20px 30px;
-  text-decoration: underline;
+//   text-decoration: underline;
 }
 
 .signbtn {
@@ -249,7 +255,10 @@ h2 {
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+// BOTTOM BAR
 
+
+//TABS AND GALLERY
 .tabs {
   border-bottom-color: gray;
   display: flex;
@@ -390,7 +399,11 @@ button {
   padding: 0 10px 0 5px;
   text-align: left;
 }
+// TABS AND GALLERY
 
+
+
+// FOOTER
 footer {
   background-color: #081f30;
   color: white;
@@ -427,6 +440,9 @@ p.foot {
   flex-direction: row;
   font-family: "Lato", sans-serif;
 }
+// FOOTER
+
+
 
 ///////team images css
 
@@ -441,6 +457,7 @@ p.foot {
     .width;
     height: 70%;
     opacity: 1;
+    object-fit: cover;
     border: 2px solid #081f30;
     margin: 5px 0 0 0;
     padding: 0 auto;
@@ -488,7 +505,7 @@ p.role {
 
 .meettheteam {
   text-align: center;
-  text-decoration: underline;
+//   text-decoration: underline;
   color: #081f30;
 }
 
@@ -502,6 +519,7 @@ p.role {
 @media(max-width: 500px){
     .team{
         .width;
+        padding: 0 10px 0 10px;
     }
 }
 
@@ -518,10 +536,11 @@ p.role {
     flex-direction: column;
   }
 }
+// ///////team images css
+
 
 /////features
 .featuresartista {
-  // border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -558,9 +577,19 @@ p.role {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 10px 10px 5px;
-  margin: 20px 10px 10px 0;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 5px 0 0;
   .width;
+}
+
+@media(max-width: 500px){
+    .text{
+        width: 100%;
+        object-fit: contain;
+        padding: 10px 10px 10px 10px;
+        margin: 20px 10px 10px 0;
+
+    }
 }
 
 h3,
@@ -581,9 +610,12 @@ p {
   text-align: left;
   .font-normal;
 }
+// FEATURES
+
+
+
 
 //////sign up form
-
 input[type="text"],
 input[type="password"] {
     .width;
@@ -681,3 +713,4 @@ b {
   font-size: 25px;
   .width;
 }
+//////sign up form
