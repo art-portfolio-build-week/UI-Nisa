@@ -24,6 +24,7 @@ html {
 body {
   max-width: 900px;
   margin: 0 auto;
+  font-size: 62.5%;
 }
 @media (max-width: 500px) {
   body {
@@ -157,13 +158,13 @@ a {
 @media (max-width: 800px) {
   h1,
   a {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   h1,
   a {
-    margin: 0;
+    margin: 0 auto;
   }
 }
 input[type=search] {
@@ -227,6 +228,7 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-size: 15px;
 }
 @media (max-width: 800px) {
   .tabs {
@@ -236,11 +238,13 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 15px;
   }
 }
 @media (max-width: 500px) {
   .tabs {
     width: 100%;
+    font-size: 15px;
   }
 }
 .topics {
@@ -259,6 +263,7 @@ h2 {
   padding: 0 7px 0 7px;
   cursor: pointer;
   font-style: normal;
+  font-size: 15px;
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
 }
@@ -266,11 +271,13 @@ h2 {
   .tab {
     width: 100%;
     margin: 50px 0 20px 0;
+    font-size: 15px;
   }
 }
 @media (max-width: 500px) {
   .tab {
     width: 100%;
+    font-size: 15px;
   }
 }
 .active-tab {
@@ -402,11 +409,13 @@ h4.name {
   text-decoration: none;
   font-family: "Lato", sans-serif;
   color: #081f30;
+  font-size: 17px;
 }
 p.role {
   text-align: center;
   font-family: "Lato", sans-serif;
   color: #081f30;
+  font-size: 15px;
 }
 .meettheteam {
   text-align: center;
@@ -451,7 +460,7 @@ p.role {
   border: 2px solid #081f30;
   border-radius: 5%;
   background-color: #59a3c0;
-  background: linear-gradient(to right bottom, #59a3c0, #405768);
+  background: linear-gradient(to right bottom, #c2cfd3, #59a3c0, #405768);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -464,15 +473,17 @@ p {
   font-family: "Latos", sans-serif;
 }
 h3 {
-  margin: 0 5px 10px 10px;
+  margin: 0 5px 5px 10px;
+  color: white;
   font-size: 20px;
   text-decoration: underline;
 }
 h3:hover {
-  color: darkblue;
+  color: #081f30;
 }
 p {
-  text-align: left;
+  text-align: center;
+  font-size: 15px;
 }
 input[type=text],
 input[type=password] {
@@ -483,6 +494,7 @@ input[type=password] {
   border-radius: 5px;
   border: 2px solid #081f30;
   background: white;
+  font-size: 15px;
   color: black;
 }
 input[type=text]:focus,
@@ -544,16 +556,17 @@ button:hover {
     width: 100%;
   }
 }
+label,
 b {
   font-family: "Latos", sans-serif;
   font-weight: 500;
   color: #081f30;
+  font-size: 17px;
 }
 .formparagraph {
   font-family: "Latos", sans-serif;
   text-align: center;
   color: #081f30;
   font-size: 25px;
-  font-weight: 600;
   width: 100%;
 }

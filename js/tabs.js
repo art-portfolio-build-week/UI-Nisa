@@ -34,3 +34,8 @@ class TabLink {
   
   let tabs = document.querySelectorAll('.tab');
   tabs.forEach(tab => new TabLink(tab));
+
+
+
+  let mainh1 = document.querySelector('h1');
+  console.log(mainh1);
