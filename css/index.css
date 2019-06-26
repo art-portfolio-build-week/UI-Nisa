@@ -46,7 +46,7 @@ html {
   }
 }
 body {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 62.5%;
 }
@@ -153,13 +153,19 @@ body {
   align-items: flex-end;
   margin: 0 0 5px 0;
 }
+.gallery,
+.img.icon,
+.signup,
+span {
+  margin-right: 5px;
+}
 @media (max-width: 800px) {
   .gallery,
   .img.icon,
   .signup,
   input[type="search"],
   span {
-    letter-spacing: 4px;
+    letter-spacing: 1px;
   }
 }
 @media (max-width: 500px) {
@@ -221,8 +227,8 @@ span {
 h1,
 a {
   color: white;
-  font-size: 40px;
-  margin-right: 20px;
+  font-size: 60px;
+  margin-right: 70px;
   font-family: Lobster, cursive;
   text-decoration: none;
 }
@@ -230,6 +236,7 @@ a {
   h1,
   a {
     margin: 0 auto;
+    font-size: 40px;
   }
 }
 @media (max-width: 500px) {
