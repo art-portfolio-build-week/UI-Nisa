@@ -79,7 +79,7 @@ body {
   height: 100px;
   flex-direction: column;
   padding: 20px 0;
-  background-color: #081f30;
+  background-color: #071622;
 }
 
 @media (max-width: 500px) {
@@ -337,6 +337,7 @@ img.icon {
 .bottom-bar {
   background-image: url("https://images.unsplash.com/photo-1490052961415-96ffc1244aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80");
   flex-direction: column;
+  height: 150px;
   color: white;
 }
 
@@ -396,9 +397,10 @@ h2 {
     }
 }
 
-button.signbtn {
+a.signbtn {
   background-color: #e9db7b;
   border-radius: 10px;
+  color: black;
   padding: 10px 20px 10px 20px;
   margin: 20px 20px 25px 35px;
   letter-spacing: 1px;
@@ -408,7 +410,7 @@ button.signbtn {
   cursor: pointer;
 }
 
-button.signbtn:hover{
+a.signbtn:hover{
     opacity: 0.5;
 }
 
@@ -473,7 +475,7 @@ button.signbtn:hover{
   align-items: center;
   font-weight: bold;
   border: 1px solid black;
-  border-color: #e9db7b;
+  border-color: #081f30;
   margin: 50px 0 30px 0;
   padding: 0 5px 0 5px;
   cursor: pointer;
@@ -592,11 +594,11 @@ button.signbtn:hover{
 .seemorebtn {
   font-weight: bold;
   cursor: pointer;
-  background-color: #e9db7b;
-  border: 2px solid #e9db7b;
+  background-color: white;
+  border: 2px solid #081f30;
   border-radius: 5px;
   font-size: 13px;
-  margin: 0 100px 0 0;
+  margin: 0 30px 10px 0;
   padding: 0 10px 0 5px;
   text-align: center;
 }
@@ -606,7 +608,7 @@ button.signbtn:hover{
 
 // FOOTER
 footer {
-  background-color: #081f30;
+  background-color: #071622;
   color: white;
   display: flex;
   flex-direction: column;
@@ -655,7 +657,7 @@ p.foot {
   flex-direction: row;
 
   a.img3 img {
-    .width;
+    width: 100%;
     height: 60%;
     opacity: 1;
     object-fit: cover;
@@ -665,11 +667,7 @@ p.foot {
     image-resolution: 100%;
   }
   a.img3 img:hover {
-    // opacity: 1;
-    -webkit-transform: rotateZ(-20deg);
-    -ms-transform: rotateZ(-20deg);
-    transform: rotateZ(-20deg);
-    border-radius: 50%;
+    opacity: 0.5;
   }
 }
 
@@ -715,7 +713,6 @@ p.role {
 
 .meettheteam {
   text-align: center;
-//   text-decoration: underline;
   color: #081f30;
 }
 
@@ -725,6 +722,8 @@ p.role {
   align-items: center;
   margin: 0 10px 0 10px;
 }
+
+
 
 @media(max-width: 500px){
     .team{
@@ -793,26 +792,29 @@ p.role {
 @media (max-width: 800px) {
     .textcontainer {
       flex-direction: column;
-      .width;
+      width: 85%;
     }
   }
 
 .text {
-  border: 2px solid #081f30;
+  border: 2px solid white;
   border-radius: 5%;
-  background-color: #59a3c0;
-  background: linear-gradient(
-    to right bottom,
-    rgb(194, 207, 211),
-    #59a3c0,
-    #405768
-  );
+  background: #0B2940;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 10px 10px 10px;
+//   padding: 10px 10px 10px 10px;
   margin: 20px 5px 0 0;
   .width;
+}
+
+@media(max-width: 580px){
+    .text{
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        margin: 20px 10px 10px 0;
+
+    }
 }
 
 @media(max-width: 500px){
@@ -840,18 +842,24 @@ p {
   font-family: "Latos", sans-serif;
 }
 h3 {
-  margin: 0 5px 5px 10px;
+  margin: 10px 5px 5px 10px;
   color: white;
-  font-size: 20px;
-  text-decoration: underline;
-  &:hover {
-    color: #081f30;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
   }
-}
+
 
 p {
-  text-align: left;
+  text-align: top;
   .font-normal;
+    padding: 10px 0 25px 10px;
+  color: white;
+}
+
+hr{
+    width: 100%;
+    color: white;
 }
 // FEATURES
 
@@ -881,8 +889,8 @@ input[type="password"]:focus {
   outline: none;
 }
 
-hr {
-  border: 1px solid #081f30;
+hr.featureshr {
+  border: 2px solid white;
   margin-bottom: 25px;
 }
 
