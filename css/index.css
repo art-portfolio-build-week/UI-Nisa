@@ -169,7 +169,7 @@ span {
   .img.icon,
   .signup,
   input[type="search"],
-  span {
+  .loginbtn span {
     letter-spacing: 0.5px;
   }
 }
@@ -178,7 +178,7 @@ span {
   .img.icon,
   .signup,
   input[type="search"],
-  span {
+  .loginbtn span {
     letter-spacing: 0.2px;
   }
 }
@@ -191,6 +191,15 @@ span {
   }
 }
 .gallery {
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  justify-content: space-between;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+.loginbtn {
   color: white;
   font-size: 20px;
   margin: 5px;
