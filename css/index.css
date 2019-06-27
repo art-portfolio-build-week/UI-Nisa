@@ -105,7 +105,6 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
   padding: 0 auto;
 }
 @media (max-width: 800px) {
@@ -156,7 +155,18 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin: 0 auto;
+  margin: 0 0 10px 0;
+}
+@media (max-width: 800px) {
+  .top-bar .container-right {
+    justify-content: center;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 500px) {
+  .top-bar .container-right {
+    width: 100%;
+  }
 }
 .gallery,
 .img.icon,
@@ -179,7 +189,7 @@ span {
   .signup,
   .loginbtn,
   span {
-    border: 2px solid red;
+    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 326px) {
@@ -295,13 +305,13 @@ img.icon {
 .bottom-bar {
   background-image: url("https://images.unsplash.com/photo-1490052961415-96ffc1244aa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80");
   flex-direction: column;
-  height: 200px;
+  height: 170px;
   color: white;
 }
 @media (max-width: 500px) {
   .bottom-bar {
     width: 100%;
-    overflow: hidden;
+    height: 160px;
   }
 }
 @media (max-width: 326px) {
@@ -329,6 +339,11 @@ h2.galleryh2 {
     font-size: 25px;
     text-align: left;
   }
+}
+h2.joinus {
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
 }
 h2 {
   font-size: 30px;
@@ -476,7 +491,7 @@ a.signbtn:hover {
   font-family: "Lato", sans-serif;
 }
 .headline {
-  font-size: 18px;
+  font-size: 13px;
   text-align: left;
   margin: 0 0 0 0;
 }
@@ -528,7 +543,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -537,9 +551,9 @@ footer {
   }
 }
 h4,
-p.foot {
+p.foot,
+p.foot a {
   cursor: pointer;
-  font-style: normal;
   text-align: center;
 }
 h4 {
@@ -547,15 +561,24 @@ h4 {
   font-family: "Lato", sans-serif;
   text-decoration-color: yellow;
   font-size: 15px;
+  margin: 0 0 5px 0;
 }
 p.foot {
   width: 100%;
   flex-direction: row;
   font-family: "Lato", sans-serif;
+  font-size: 12px;
+  padding: 0 0 20px 10px;
+  cursor: pointer;
+}
+p.foot a {
+  width: 100%;
+  flex-direction: row;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
+  padding: 0 auto;
 }
 p.copyright {
-  align-self: flex-end;
   font-size: 14px;
 }
 .teamimages {
@@ -576,7 +599,9 @@ p.copyright {
   image-resolution: 100%;
 }
 .teamimages a.img3 img:hover {
-  opacity: 0.5;
+  opacity: 0.9;
+  position: relative;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 800px) {
   .teamimages a.img3 img {
@@ -748,10 +773,9 @@ input[type="password"] {
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
-  background: linear-gradient(to right bottom, white, #59a3c0, #405768);
+  background: white;
   font-family: "Latos", sans-serif;
   font-size: 18px;
-  color: linear-gradient(to right bottom, #405768, #59a3c0, white);
   outline: none;
 }
 hr.featureshr {
